@@ -1788,6 +1788,11 @@ video {
   border-style: none;
 }
 
+.bg-\[hsl\(228\2c 45\%\2c 44\%\)\] {
+  --tw-bg-opacity: 1;
+  background-color: hsl(228 45% 44% / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
