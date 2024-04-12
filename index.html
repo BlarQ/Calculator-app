@@ -7,23 +7,26 @@
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <title>Frontend Mentor | Calculator app</title>
 </head>
-<body class="bg-[hsl(228,45%,44%)]">
+<body class="bg-[#1d2951] w-screen h-screen flex justify-center items-center">
     <div>
-        <div>
-            <h1>calc</h1>
+        <div class="flex justify-between items-center">
+            <h1 class="font-BlarQ text-white text-sm font-bold">calc</h1>
 
-            <div>
-                <h2>THEME</h2>
+            <div class="flex justify-between items-center">
+                <h2 class="font-BlarQ 
+                text-[8px] 
+                text-white
+                mr-4">THEME</h2>
 
                 <div>
-                    <div>
-                        <section>1</section>
-                        <section>2</section>
-                        <section>3</section>
+                    <div class="flex">
+                        <section class="font-BlarQ text-[8px] text-white mr-2 mt-[-15px]">1</section>
+                        <section class="font-BlarQ text-[8px] text-white mr-2 mt-[-15px]">2</section>
+                        <section class="font-BlarQ text-[8px] text-white mt-[-15px]">3</section>
                     </div>
 
-                    <div>
-                        <div>
+                    <div class="bg-[#020a145b] w-9 rounded-md h-3 ml-[-3px] mt-[-1px] p-[0.15rem] cursor-pointer">
+                        <div class="bg-red-700 w-2 h-2 rounded-full cursor-pointer">
 
                         </div>
                     </div>
@@ -31,29 +34,132 @@
             </div>
         </div>
 
-        <div>
-            <input type="number" name="result" id="result">
+        <div class="my-3 bg-[#020a145b] rounded-md">
+            <p class="bg-inherit min-w-full rounded-md
+            focus:outline-none
+            text-xl font-BlarQ font-bold h-14 text-white text-right p-3">399,981</p>
+            <!-- <input class="bg-inherit min-w-full rounded-md
+            focus:outline-none
+            text-xl font-BlarQ font-bold h-14 text-white text-right" type="number" name="result" id="result" placeholder="399,981"> -->
         </div>
 
-        <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-            <button>13</button>
-            <button>14</button>
-            <button>15</button>
-            <button>16</button>
-            <button>17</button>
-            <button>18</button>
+        <div class="bg-[#020a145b] min-w-10 min-h-24 grid grid-cols-4 gap-2 p-3 rounded-md">
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">7</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">8</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">9</button>
+            <button class="bg-[#3e4d80] 
+            text-xs
+            shadow-[#1d2644]
+            text-white
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">DEL</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">4</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">5</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">6</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">+</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">1</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">2</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">3</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">-</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">.</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">0</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">/</button>
+            <button class="bg-gray-300 
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">x</button>
+            <button class="col-span-2 bg-[#3e4d80] 
+            text-xs
+            shadow-[#1d2644]
+            text-white
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ
+            font-bold">RESET</button>
+            <button class="col-span-2 bg-[#8a1f17] 
+            text-xs
+            shadow-[#1d2644]
+            text-white
+            rounded-md
+            min-w-11
+            min-h-7
+            font-BlarQ">=</button>
         </div>
     </div>
 </body>
