@@ -8,6 +8,7 @@ const textColor1 = document.getElementById('head1')
 const textColor2 = document.getElementById('head2')
 const textColor3 = document.getElementById('head3')
 const textColor4 = document.getElementById('head4')
+const span = document.getElementsByTagName('span')
 
 
 //Delete Function
@@ -59,9 +60,3 @@ const bgColor = () => {
 
 bgToggler.addEventListener('click', bgColor)
 
-// const togglerAnim = ()  => {
-//     currentLeft = parseInt(bgToggler.style.left) || 0
-//     bgToggler.style.left = (currentLeft + 10) + 'px'
-// }
-
-// bgToggler.addEventListener('click', togglerAnim)
