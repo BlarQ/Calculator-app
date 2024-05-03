@@ -10,7 +10,7 @@
 <body class="bg-[#1d2951] w-[100%] max-h-[100vh] sm:h-screen flex justify-center items-center">
     <div class="sm:mt-0 mt-12">
         <div class="flex justify-between items-center">
-            <h1 class="font-BlarQ text-white sm:text-sm text-3xl font-bold">calc</h1>
+            <h1 id="hh" class="font-BlarQ text-white sm:text-sm text-3xl font-bold">calc</h1>
 
             <div class="flex justify-between items-center">
                 <h2 class="font-BlarQ 
@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="bg-[#020a145b] sm:w-9 w-16 rounded-full sm:h-3 h-5 sm:ml-[-3px] ml-[-5px] sm:p-[0.15rem] p-1 cursor-pointer sm:mt-[-7px] mt-[-12px]">
-                        <div class="bg-red-700 sm:w-2 w-3 sm:h-2 h-3 rounded-full cursor-pointer hover:bg-[#bb3d34]">
+                        <div id="bgToggler" class="bg-red-700 sm:w-2 w-3 sm:h-2 h-3 rounded-full cursor-pointer hover:bg-[#bb3d34]">
 
                         </div>
                     </div>
@@ -66,13 +66,13 @@
         </div>
 
         <div class="sm:my-3 my-6 bg-[#020a145b] rounded-md">
-            <p class="bg-inherit min-w-full rounded-md
+            <input id="display" type="text" placeholder="0" name="display" class="bg-inherit min-w-full rounded-md
             focus:outline-none
-            sm:text-xl text-4xl font-BlarQ font-bold sm:h-14 h-20 text-white text-right sm:p-3 p-4">399,981</p>
+            sm:text-xl text-4xl font-BlarQ font-bold sm:h-14 h-20 text-white text-right sm:p-3 p-4"></input>
         </div>
 
         <div class="bg-[#020a145b] sm:min-w-10 min-w-[80vw] sm:min-h-24 min-h-[60vh] grid grid-cols-4 sm:gap-2 gap-2 sm:p-3 p-4 rounded-md">
-            <button class="bg-gray-300 
+            <button value="7" onclick="display.value += '7'" id="button7" class="bg-gray-300 
             hover:bg-white
             rounded-md
             sm:min-w-11
@@ -82,7 +82,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">7</button>
-            <button class="bg-gray-300 
+            <button id="button8" value="8" onclick="display.value += '8'" class="bg-gray-300 
             hover:bg-white
             rounded-md
             sm:min-w-11
@@ -92,7 +92,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">8</button>
-            <button class="bg-gray-300 
+            <button id="button9" value="9" onclick="display.value += '9'" class="bg-gray-300 
             hover:bg-white
             rounded-md
             sm:min-w-11
@@ -102,7 +102,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">9</button>
-            <button class="bg-[#3e4d80] 
+            <button id="buttonDel" class="bg-[#3e4d80] 
             hover:bg-[#5d6ea8]
             sm:text-xs
             shadow-[#1d2644]
@@ -114,7 +114,7 @@
             text-lg
             font-BlarQ
             font-bold">DEL</button>
-            <button class="bg-gray-300 
+            <button id="button4" value="4" onclick="display.value += '4'" class="bg-gray-300 
             hover:bg-white
             rounded-md
             sm:min-w-11
@@ -124,7 +124,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">4</button>
-            <button class="bg-gray-300 
+            <button id="button5" value="5" onclick="display.value += '5'" class="bg-gray-300 
             hover:bg-white
             rounded-md
             sm:min-w-11
@@ -134,7 +134,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">5</button>
-            <button class="bg-gray-300 
+            <button id="button6" value="6" onclick="display.value += '6'" class="bg-gray-300 
             hover:bg-white
             rounded-md
             sm:min-w-11
@@ -144,7 +144,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">6</button>
-            <button class="bg-gray-300 
+            <button id="buttonPlus" value="+" onclick="display.value += '+'" class="bg-gray-300 
             hover:bg-white
             rounded-md
             sm:min-w-11
@@ -154,7 +154,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">+</button>
-            <button class="bg-gray-300
+            <button id="button1" value="1" onclick="display.value += '1'" class="bg-gray-300
             hover:bg-white 
             rounded-md
             sm:min-w-11
@@ -164,7 +164,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">1</button>
-            <button class="bg-gray-300 
+            <button id="button2" value="2" onclick="display.value += '2'" class="bg-gray-300 
             hover:bg-white
             rounded-md
             sm:min-w-11
@@ -174,7 +174,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">2</button>
-            <button class="bg-gray-300
+            <button id="button3" value="3" onclick="display.value += '3'" class="bg-gray-300
             hover:bg-white 
             rounded-md
             sm:min-w-11
@@ -184,7 +184,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">3</button>
-            <button class="bg-gray-300
+            <button id="buttonSub" value="-" onclick="display.value += '-'" class="bg-gray-300
             hover:bg-white 
             rounded-md
             sm:min-w-11
@@ -194,7 +194,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">-</button>
-            <button class="bg-gray-300
+            <button id="buttonDot" value="." onclick="display.value += '.'" class="bg-gray-300
             hover:bg-white 
             rounded-md
             sm:min-w-11
@@ -204,7 +204,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">.</button>
-            <button class="bg-gray-300
+            <button id="button0" value="0" onclick="display.value += '0'" class="bg-gray-300
             hover:bg-white 
             rounded-md
             sm:min-w-11
@@ -214,7 +214,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">0</button>
-            <button class="bg-gray-300
+            <button id="buttonDiv" value="/" onclick="display.value += '/'" class="bg-gray-300
             hover:bg-white 
             rounded-md
             sm:min-w-11
@@ -224,7 +224,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">/</button>
-            <button class="bg-gray-300
+            <button id="buttonMult" value="*" onclick="display.value += '*'" class="bg-gray-300
             hover:bg-white 
             rounded-md
             sm:min-w-11
@@ -234,7 +234,7 @@
             sm:text-xl
             font-BlarQ
             font-bold">x</button>
-            <button class="col-span-2 bg-[#3e4d80]
+            <button id="buttonRes" class="col-span-2 bg-[#3e4d80]
             hover:bg-[#5d6ea8] 
             sm:text-xs
             shadow-[#1d2644]
@@ -246,7 +246,7 @@
             text-lg
             font-BlarQ
             font-bold">RESET</button>
-            <button class="col-span-2 bg-[#8a1f17]
+            <button id="buttonEqual" class="col-span-2 bg-[#8a1f17]
             hover:bg-[#bb3d34]
             sm:text-xs
             shadow-[#1d2644]
@@ -260,4 +260,5 @@
         </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
